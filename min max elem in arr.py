@@ -18,3 +18,6 @@ def minMax(arr):
             maxE = max(arr[i], maxE)
     return minE, maxE
                 
+# Another potential approach: For every iteration, check if the minE value is updated. If it gets changed, move to the next iteration.
+# If the value remains the same, update the maxE value. This is based on the intuition that if we are changing the min value in an array,
+# then we know for a fact that value cannot be the max value and vice-versa.
